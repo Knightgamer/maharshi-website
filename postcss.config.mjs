@@ -1,7 +1,9 @@
-const config = {
-  plugins: {
-    "@tailwindcss/postcss": {},
-  },
-};
+import * as easyImport from "postcss-easy-import";
+import autoprefixer from "autoprefixer";
 
-export default config;
+export default {
+  plugins: [
+    easyImport.default({ prefix: "_" }),
+    autoprefixer(),
+  ],
+};
