@@ -10,7 +10,7 @@ export default function Header({ onOpenArticle, timeout }: HeaderProps) {
   return (
     <header id="header" style={timeout ? { display: "none" } : {}}>
       <div className="logo">
-        <Image src="/static/images/maharshi-favicon.avif" alt="Maharshi Packaging Limited" width={70} height={70} priority />
+<Image src="/static/images/maharshi-favicon.avif" alt="Maharshi Packaging Limited" width={0} height={0} priority className="headerLogoImg" sizes="(max-width: 720px) 48px, 60px" />
       </div>
 
       <div className="content">
